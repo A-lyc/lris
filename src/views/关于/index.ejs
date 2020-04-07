@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <!--Place favicon.ico in the root directory -->
+</head>
+
+<body class="page-about" id="page-index">
+  <main class="comp-root">
+    <!-- header -->
+    <section class="comp-root-header">
+      <%= require('../../components/head/index.ejs')() %>
+    </section>
+    <!-- menu -->
+    <section class="comp-root-menu">
+      <%= require('../../components/menu/index.ejs')() %>
+    </section>
+    <!-- banner -->
+    <section class="about-banner">
+      <div class="about-banner-img" style="background-image: url(<%= require('./images/about-top.jpg') %>)">
+      </div>
+      <div class="about-box">
+        <div class="about-box-text">
+          <h1>Iris Brilliant Company Limited</h1>
+          <p>This picture is one of the views of our city, Qingdao which is </p>
+        </div>
+        <div class="about-box-home">
+          <%= require('../../components/home/index.ejs')() %>
+        </div>
+      </div>
+    </section>
+
+    <!-- body -->
+    <section class="content-body ">
+      <div class="content-body-text col-md-12"> <%= require('../../components/title/index.ejs')() %></div>
+      <div class="content-body-box col-md-12">
+        <div class="content-body-box-img">
+          <img src="<%= require('./images/about-jieshao.jpg') %>" alt="">
+        </div>
+        <div class="content-body-box-title">
+          <p>We are established in 2006 by practiced team focusing on international business. Specialized in exporting
+            pharmaceutical raw materials and intermediates, extracts and other chemical produtcts worldwide.</p>
+        </div>
+      </div>
+
+      <div class="content-body-box col-md-12">
+        <div class="content-body-box-title content-body-box-left">
+          <p>We are established in 2006 by practiced team focusing on international business. Specialized in
+            exporting
+            pharmaceutical raw materials and intermediates, extracts and other chemical produtcts worldwide.</p>
+        </div>
+        <div class="content-body-box-img content-body-box-img-left">
+          <img src="<%= require('./images/about-jieshao.jpg') %>" alt="">
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <section>
+      <%= require('../../components/footer/index.ejs')() %>
+    </section>
+  </main>
+  <%= require('../../components/webmap/index.ejs')() %>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+@import "../../assets/styles/utils";
+
+@import '~jason-webmap/src/style.scss';
+
+.jason-map{
+    &-heading{
+        color: $theme-subsidiary-color;
+    }
+    &-title:before{
+        background-color: $theme-subsidiary-color;
+    }
+    &-footer{
+        border-left: 1px solid $theme-subsidiary-color;
+    }
+}

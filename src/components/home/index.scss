@@ -1,0 +1,11 @@
+@import "../../assets/styles/utils";
+@import "~jason-css/src/responsive/util";
+
+.home{
+  width: 77px;
+  height: 77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $theme-color;
+}

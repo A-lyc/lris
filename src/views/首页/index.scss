@@ -1,0 +1,197 @@
+@import "../../assets/styles/utils";
+
+
+.swiper-wrapper {}
+
+.banner {
+  height: 80vh;
+  overflow: hidden;
+
+  &-img {
+    position: absolute;
+    height: 100%;
+    background: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &-text-swiper {
+    @include res(width, 1200px, (md:960px,
+        sm:768px,
+        xs:80%));
+    margin: 0 auto;
+    // left: calc(50% - 600px) !important;
+    z-index: 9;
+    // position: absolute;
+    // top: 30%;
+
+    color: #fff;
+    line-height: 1;
+
+    & h1 {
+      width: 100%;
+      @include res(font-size, 50px, 35/50);
+      @include res(margin-bottom, 30px, 20/30)
+    }
+
+    & p {
+      height: 100%;
+      @include res(font-size, 20px, 18/20);
+    }
+  }
+
+  &-height {
+    height: 100%;
+  }
+
+  &-span {
+    bottom: 30% !important;
+    @include res(width, 1200px !important, (md:960px,
+        sm:768px,
+        xs:80%));
+    @include res(left, calc(50% - 600px) !important, (md:calc(50% - 480px) !important,
+        sm:calc(50% - 384px) !important,
+        xs:calc(50% - 40%) !important));
+    text-align: left;
+    margin: 0 auto;
+
+    & span {
+      width: 28px;
+      height: 3px;
+      border-radius: 0;
+      background-color: #fff;
+      opacity: 1;
+     
+    }
+  }
+
+}
+
+// banner切换span颜色
+.swiper-pagination-bullet-active {
+  transition:all .5s;
+  background-color: $theme-color !important;
+  width: 60px !important;
+}
+
+// about
+.about-root {
+  width: 100%;
+  background-color: $theme-bg-color;
+
+  &-content {
+    @include res(width, 1200px, (md:960px,
+        sm:768px,
+        xs:80%));
+    margin: 0 auto;
+    padding: 100px 0 120px 0;
+
+  }
+
+  &-text {
+    position: relative;
+    @include res(font-size, 18px, 16/18);
+    @include res(padding-right, 80px, 5/80);
+  }
+
+  &-more {
+    height: 40px;
+    @include res(margin-top, 40px, 20/40);
+    @include res(margin-bottom, 40px, 20/40)
+  }
+
+  &-img {
+    width: 100%;
+  }
+}
+
+// product
+.product {
+  width: 100%;
+
+  &-root {
+    @include res(width, 1200px, (md:960px,
+        sm:768px,
+        xs:80%));
+    margin: 0 auto;
+    padding: 100px 0 120px 0;
+    @include res(padding-top, 100px, 50/100);
+    @include res(padding-bottom, 120px, 50/120);
+
+    &-img {
+      margin-top: 60px;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &-box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include res(margin-bottom, unll, (xs:10px));
+        overflow: hidden;
+
+        & img {
+          transition: all .5s;
+        }
+
+        &:hover {
+          & img {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 9;
+      }
+    }
+
+    &-text {
+      position: absolute;
+      font-size: 30px;
+      color: #fff;
+      z-index: 10;
+    }
+  }
+}
+
+
+// contact
+.contact {
+  width: 100%;
+  background-color: $theme-bg-color;
+
+  &-root {
+    @include res(width, 1200px, (md:960px,
+        sm:768px,
+        xs:80%));
+    margin: 0 auto;
+    @include res(padding-top, 100px, 50/100);
+    @include res(padding-bottom, 120px, 50/120);
+
+    &-box {
+      padding-top: 15px;
+
+      & h1 {
+        color: $theme-color;
+        font-size: 20px;
+      }
+
+      & p {
+        font-size: 18px;
+      }
+    }
+  }
+}

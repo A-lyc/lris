@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <!--Place favicon.ico in the root directory -->
+</head>
+
+<body class="page-prodict">
+  <main class="comp-root">
+    <!-- header -->
+    <section class="comp-root-header">
+      <%= require('../../components/head/index.ejs')() %>
+    </section>
+    <!-- menu -->
+    <section class="comp-root-menu">
+      <%= require('../../components/menu/index.ejs')() %>
+    </section>
+    <!-- body -->
+    <section class="content-body">
+      <!-- banner -->
+      <div class="content-body-img" style="background-image: url(<%= require('./images/pattern.jpg') %>)">
+      </div>
+      <div class="prodict-box">
+        <div class="prodict-box-text">
+          <h1>Iris Brilliant Company Limited</h1>
+          <p>This picture is one of the views of our city, Qingdao which is </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- body -->
+    <section class="content-content">
+<% for(var i = 0; i < 4; i++) { %>
+ <%= require('../../components/list/index.ejs')({
+        text:"Apis",
+        product:[{name:"Product",time:'103-90-2'},{name:"Product",time:'103-90-2'},{name:"Product",time:'103-90-2'}]
+      }) %>
+<% } %>
+    </section>
+
+
+    <!-- footer -->
+    <section>
+      <%= require('../../components/footer/index.ejs')() %>
+    </section>
+  </main>
+  <%= require('../../components/webmap/index.ejs')() %>
+</body>
+
+</html>

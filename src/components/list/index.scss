@@ -1,0 +1,72 @@
+@import "../../assets/styles/utils";
+@import "~jason-css/src/responsive/util";
+
+.product{
+  width: 100%;
+  position: relative;
+  & img{
+    width: 100%;
+    // height: 100%;
+  }
+ 
+  &-active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-title{
+       position: absolute;
+       @include res(font-size,60px,40/60);
+       color:#fff;
+    }
+     &-img {
+       position: relative;
+       z-index: -1;
+     }
+    &-bg{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      // background-color: rgba(0,0,0,.5);
+    }
+  }
+  &-arguments{
+    @include res(padding-top, 65px, 20/65);
+    @include res(padding-bottom, 65px, 20/65);
+    @include res(padding-left,100px,20/100);
+    @include res(padding-right, 100px, 20/100);
+    @include res(margin-bottom,40px,20/40);
+    width: 100%;
+    margin-top: -10px;
+    background-color: #fff;
+    font-weight: 700;
+    z-index: 9;
+    & table {
+      width: 100%;
+      & tr{
+        &:nth-child(1){
+          color: $theme-subsidiary-color;
+          
+        }
+        & {
+          color: $theme-color;
+        }
+        & td{
+          text-align: left;
+        }
+        & td:nth-child(1){
+          width: 50%;
+          text-align: left;
+        }
+        & td:nth-child(2) {
+          width: 50%;
+          text-align: right;
+        }
+        @include res(height,50px,30/50 );
+        border-bottom: 1px solid $theme-border-color;
+      }
+    }
+  }
+
+}

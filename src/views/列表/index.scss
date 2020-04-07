@@ -1,0 +1,57 @@
+@import "../../assets/styles/utils";
+
+.page-prodict{
+    background-color: $theme-bg-color;
+}
+.content-body{
+        width: 100%;
+        height: 50vh;
+        position: relative;
+        overflow: hidden;
+        @include res(margin-bottom,140px,50/140);
+        &-img {
+          width: 100%;
+          background:no-repeat;
+          background-size: cover;
+          background: center;
+          height: 100%;
+          position: absolute;
+        }
+}
+.prodict-box {
+  @include res(width, 1200px, (md:960px,
+      sm:768px,
+      xs:80%));
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+ @include res(padding-bottom,40px,20/40);
+  position: relative;
+  color: #fff;
+
+  &-text {
+    & h1 {
+      @include res(font-size, 80px, 35/80)
+    }
+
+    & p {
+      @include res(font-size, 20px, 18/20)
+    }
+  }
+
+  &-home {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+  }
+}
+.content-content{
+
+    @include res(width, 1200px, (md:960px,
+        sm:768px,
+        xs:80%));
+        margin: 0 auto;
+    overflow: hidden;
+}

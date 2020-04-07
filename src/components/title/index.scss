@@ -1,0 +1,18 @@
+@import "../../assets/styles/utils";
+@import "~jason-css/src/responsive/util";
+
+.headline{
+    font-size: 40px;
+    color:$theme-color;
+    position: relative;
+    line-height: 1;
+    padding-left: 30px;
+    &::before{
+        content: "";
+        width: 4px;
+        height: 40px;
+        background-color: $theme-color;
+        position: absolute;
+        left: 0;
+    }
+}

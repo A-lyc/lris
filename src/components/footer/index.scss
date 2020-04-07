@@ -1,0 +1,25 @@
+@import "../../assets/styles/utils";
+
+@import '~jason-webmap/src/style.scss';
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    width: 100%;
+    background-color: $theme-color;
+    align-items: center;
+    flex-wrap: wrap;
+    color: $theme-text-color;
+    @include res(padding-left,80px,50/80);
+    @include res(padding-right, 80px, 50/80);
+    // @include res(margin-top, 50px, 50/30);
+    @media (max-width:992px) {
+        text-align: center !important;
+    }
+}
+.webmap-map{
+    text-align: right;
+    @media (max-width:992px) {
+      text-align: center !important;
+    }
+}

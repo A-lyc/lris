@@ -1,0 +1,26 @@
+$theme-color: #478714;
+$theme-subsidiary-color: #7a47ea;
+$theme-bg-color: #eaf0e5;
+$theme-text-color: #ceebb6;
+$theme-border-color: #d9e5cf;
+
+$transition-time-title:.3s;
+$transition-time-product:.5s;
+$line-height :1.8;
+
+// 汉堡包按钮
+$hamburger-layer-width: 30px;
+$hamburger-layer-height: 4px;
+$hamburger-layer-spacing: 5px;
+$hamburger-layer-color: #ffffff;
+$hamburger-layer-border-radius: 0;
+
+// 响应式断点，需要从小到大写
+$layout-responsive-breakpoint: ( // 手机
+  xs: (min-width: 0px, container-width: 100%),
+  // 平板
+  sm: (min-width: 768px, container-width: 720px),
+  // 小屏
+  md: (min-width: 992px, container-width: 960px),
+  // 大屏
+  lg: (min-width: 1367px, container-width: 1230px)) !default;

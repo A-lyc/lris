@@ -1,0 +1,86 @@
+@import "../../assets/styles/utils";
+@import "~jason-css/src/responsive/util";
+
+
+
+.comp-header {
+  @include res(padding-top, 50px, 30/50);
+  // @include res(padding-bottom, 50px, 30/50);
+  @include res(padding-left, 50px, 30/50);
+  @include res(padding-right, 50px, 30/50);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 12;
+  transition: all .5s;
+  @include res(justify-content, space-between, (
+    md:space-between,
+    xs:flex-end,
+  ));
+  &.active {
+  background-color: $theme-border-color; 
+  padding-top: 20px;
+  display: flex;
+  padding-bottom: 20px;
+  align-items: center;
+  }
+  &-logo {
+    display: inline-block;
+    position: relative;
+   @include res(display, null, (
+     md:inline-block,
+     xs:none,
+     ))
+  }
+  &-imagess{
+    &-show {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all .5s;
+      
+    }
+  }
+}
+.hamburger {
+  &-item {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+  }
+}
+
+.hamburger.hamburger-1>div,
+.hamburger.hamburger-1>view {
+  top: 65%
+}
+
+.comp-header-hamburger{
+  &.active {
+    
+    .hamburger-item{
+    border: 1px solid $theme-subsidiary-color;
+    }
+    .hamburger>div:before,
+    .hamburger>div,
+    .hamburger>div:after{
+      background-color: $theme-subsidiary-color;
+    }
+
+  }
+}
+.comp-menu-shadow{
+  opacity: 0;
+  &.active {
+    opacity: 1;
+  }
+}

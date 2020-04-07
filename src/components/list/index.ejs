@@ -1,0 +1,32 @@
+<%
+if (!text) var text = ''
+if (!product) var product = ['1']
+%>
+<div class="product">
+  <div class="product-active">
+    <div class="product-active-img">
+    <div class="product-active-bg"></div>
+    <img src="<%= require('./images/product-active.jpg') %>" alt="">   
+    </div>
+    <div class="product-active-title">
+      <%= text %>
+    </div>
+  </div>
+
+  <div class="product-arguments">
+  <table>
+    <tr>
+      <td>Product Name</td>
+      <td>Cas Number</td>
+    </tr>
+
+    <% for(var i = 0; i < product.length; i++) { %>
+    <tr>
+      <td><%= product[ i ].name %></td>
+      <td><%= product[ i ].time %></td>
+    </tr>
+     <% } %>
+     
+  </table>
+  </div>
+</div>

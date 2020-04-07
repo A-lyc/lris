@@ -1,0 +1,33 @@
+@import "./utils";
+@import "~jason-css/src/responsive/index";
+
+@font-face {
+  font-family: 'souvenir-light';
+  src: url('../fonts/souvenir_light_italic_bt-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SOUVENIR-DEMI-ITALIC-BT';
+  src: url('../fonts/SOUVENIR-DEMI-ITALIC-BT.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SOUVENIR-LIGHT-BT';
+  src: url('../fonts/SOUVENIR-LIGHT-BT.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  color: #272727;
+  line-height: 1.8;
+  font-family: "SOUVENIR-LIGHT-BT",
+  "微软雅黑",
+  Helvetica,
+  sans-serif;
+}
+input,
+textarea {
+  outline: none;
+}

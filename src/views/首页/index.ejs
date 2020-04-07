@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <!--Place favicon.ico in the root directory -->
+</head>
+
+<body class="page-index" id="page-index">
+  <main class="comp-root">
+
+    <!-- header -->
+    <section class="comp-root-header">
+      <%= require('../../components/head/index.ejs')() %>
+    </section>
+
+    <!-- menu -->
+    <section class="comp-root-menu">
+      <%= require('../../components/menu/index.ejs')() %>
+    </section>
+
+    <!-- banner -->
+    <section class="comp-root-body">
+      <div class="banner">
+        <div class="swiper-container banner-height">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex align-items-center">
+              <div class="banner-img" style="background-image: url(<%= require('./images/banner.jpg') %>);">
+              </div>
+              <div class="banner-text-swiper">
+                <h1> Providing Efficient Services</h1>
+                <p> Providing Efficient Services</p>
+              </div>
+            </div>
+            <div class="swiper-slide flex align-items-center">
+              <div class="banner-img" style="background-image: url(<%= require('./images/banner.jpg') %>);">
+              </div>
+              <div class="banner-text-swiper">
+                <h1> Providing Efficient Services</h1>
+                <p> Providing Efficient Services</p>
+              </div>
+            </div>
+            <div class="swiper-slide flex align-items-center">
+              <div class="banner-img" style="background-image: url(<%= require('./images/banner.jpg') %>);">
+              </div>
+              <div class="banner-text-swiper">
+                <h1> Providing Efficient Services</h1>
+                <p> Providing Efficient Services</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination banner-span"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- content -->
+    <section class="about-root">
+      <div class="row about-root-content">
+        <%= require('../../components/title/index.ejs')() %>
+        <div class="row mt-16">
+          <div class="col-md-6 col-sm-6 col-xs-12 pr-6 about-root-text">
+            <p>
+              We are established in 2006 by practiced team focusing on international business. Specialized in
+              exporting pharmaceutical raw materials and intermediates, extracts and other chemical produtcts
+              worldwide.
+            </p>
+            <br>
+            <p>
+              It is our hornour to cooperate with customers worldwide. You will get products with high qualtiy along
+              with efficient service from us. We take our responsibitlity to keep words and ensure benefits to our
+              esteemed business partners.
+
+            </p>
+            <div class="about-root-more">
+              <%= require('../../components/more/index.ejs')() %>
+            </div>
+
+          </div>
+          <div class="col-md-6  col-sm-6 col-xs-12">
+            <img class="about-root-img" src="<%= require('./images/about.jpg') %>" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Product -->
+    <section class="product">
+      <div class="row product-root">
+        <%= require('../../components/title/index.ejs')() %>
+        <div class="row product-root-img">
+          <div class="col-md-6 col-sm-6 col-xs-12 product-root-img-box">
+            <div class="product-root-img-bg"></div>
+            <img src="<%= require('./images/product (1).jpg') %>" alt="">
+            <div class="product-root-text">Apis</div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 product-root-img-box">
+            <div class="product-root-img-bg"></div>
+            <img src="<%= require('./images/product (2).jpg') %>" alt="">
+            <div class="product-root-text">Pharmaceutical Intermediates</div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 product-root-img-box">
+            <div class="product-root-img-bg"></div>
+            <img src="<%= require('./images/product (3).jpg') %>" alt="">
+            <div class="product-root-text">Extracts</div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 product-root-img-box">
+            <div class="product-root-img-bg"></div>
+            <img src="<%= require('./images/product (4).jpg') %>" alt="">
+            <div class="product-root-text">Others</div>
+          </div>
+        </div>
+    </section>
+
+    <!--  Contact Us -->
+    <section class="contact">
+      <div class="contact-root">
+        <%= require('../../components/title/index.ejs')() %>
+        <div class="row contact-root-box">
+          <div class="col-md-6 col-sm-6 col-xs-12 mt-12">
+            <h1>Address</h1>
+            <p>NO. 7 YINCHUANXI ROAD, QINGDAO 266071, CHINA</p>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 mt-12">
+            <h1>Address</h1>
+            <p>NO. 7 YINCHUANXI ROAD, QINGDAO 266071, CHINA</p>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 mt-12">
+            <h1>Address</h1>
+            <p>NO. 7 YINCHUANXI ROAD, QINGDAO 266071, CHINA</p>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 mt-12">
+            <h1>Address</h1>
+            <p>NO. 7 YINCHUANXI ROAD, QINGDAO 266071, CHINA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <%= require('../../components/footer/index.ejs')() %>
+    </section>
+  </main>
+
+  <%= require('../../components/webmap/index.ejs')() %>
+</body>
+
+</html>
